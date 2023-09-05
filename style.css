@@ -1,0 +1,185 @@
+body {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+}
+
+.full-background-container {
+  position: relative;
+  height: 100vh;
+  width: auto;
+}
+
+.full-background {
+  background-color: lightgray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.scroll-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: auto;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-background2 {
+  background-color: lightgray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: auto;
+  height: 100vh;
+}
+
+.HochschuleLink {
+  color: rgb(92, 92, 92);
+  text-decoration: none;
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 10px;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 23px;
+  text-decoration: none;
+  color: black;
+  padding: 0px;
+  position: relative;
+  border-bottom: 2px solid transparent; /* Füge eine transparente Unterstreichung hinzu */
+}
+
+/* Erstellen der Linie unter dem Text */
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Verschiebe die Linie unter dem Text */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.4s ease;
+}
+
+/* Hover-Verhalten für die Linie */
+nav a:hover::before {
+  width: 99%;
+}
+/* Fügen Sie diese CSS-Regel hinzu, um das Logo links auszurichten */
+.logo {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* Fügen Sie diese CSS-Regel hinzu, um die Navigation rechts auszurichten */
+.nav-items {
+  float: right;
+  margin-right: 20px;
+  margin-top: 2px;
+}
+
+/* Fügen Sie diese CSS-Regel hinzu, um den Abstand zwischen dem Logo und der Navigation anzupassen */
+nav {
+  clear: both;
+}
+
+.Footer {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav li {
+  display: inline;
+  margin-right: 20px;
+  position: relative; /* Füge eine relative Position hinzu */
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative; /* Füge eine relative Position hinzu */
+}
+
+/* Erstellen der Linie unter dem Text im Footer */
+.footer-nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.4s ease;
+}
+
+/* Hover-Verhalten für die Linie im Footer */
+.footer-nav a:hover::before {
+  width: 99%;
+}

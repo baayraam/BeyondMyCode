@@ -1,0 +1,117 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2px;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 10px;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 23px;
+  text-decoration: none;
+  color: black;
+  padding: 0px;
+  position: relative;
+  border-bottom: 2px solid transparent; /* Füge eine transparente Unterstreichung hinzu */
+}
+
+/* Erstellen der Linie unter dem Text */
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Verschiebe die Linie unter dem Text */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.4s ease;
+}
+
+/* Hover-Verhalten für die Linie */
+nav a:hover::before {
+  width: 99%;
+}
+/* Fügen Sie diese CSS-Regel hinzu, um das Logo links auszurichten */
+.logo {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* Fügen Sie diese CSS-Regel hinzu, um die Navigation rechts auszurichten */
+.nav-items {
+  float: right;
+  margin-right: 20px;
+  margin-top: 2px;
+}
+
+/* Fügen Sie diese CSS-Regel hinzu, um den Abstand zwischen dem Logo und der Navigation anzupassen */
+nav {
+  clear: both;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+header h1 {
+  font-size: 2rem;
+}
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.team-member {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+.team-member:hover {
+  transform: scale(1.02);
+}
+.team-member h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.team-member p {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #333;
+  color: #fff;
+}
