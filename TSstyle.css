@@ -94,12 +94,13 @@ main {
   padding: 2rem;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 .team-member {
   margin-bottom: 1rem;
   padding: 1rem;
   border: 2px solid #ddd;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #fff;
   transition: transform 0.2s ease-in-out;
 }
